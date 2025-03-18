@@ -151,7 +151,7 @@ function update() {
   context.font = "45px sans-serif";
   context.fillText(score, 180, 35);
   if (gameOver) {
-    context.fillText("GAME OVER", 175, 285);
+    context.fillText("GAME OVER", 175, 245);
     bgmMusic.pause(); // Stop the background music
     bgmMusic.currentTime = 0; // Reset the music
     cancelAnimationFrame(animationFrameId); // Stop game loop
