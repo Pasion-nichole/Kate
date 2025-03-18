@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Flappy Bird</title>
+        <link rel="stylesheet" href="flappybird.css"> 
+        <style>
+        #resetButton {
+            display: none; /* Itago ang button sa simula */
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    </head>
+    <body>
+        <canvas id="board"></canvas> 
+        <button id="resetButton">Restart</button>
+        <script src="flappybird.js"></script>   
+    </body>
+</html>
