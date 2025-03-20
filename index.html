@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport", content="width=device-width, initial-scale=1.0">
-        <title>Flappy Bird</title>
-        <link rel="stylesheet" href="flappybird.css"> 
-        <style>
-        #resetButton {
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <link rel="stylesheet" href="flappybird.css"> 
+    <style>
+      #resetButton {
             display: none; /* Itago ang button sa simula */
             position: absolute;
-            top: 15%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             padding: 10px 20px;
@@ -17,10 +17,36 @@
             cursor: pointer;
         }
     </style>
-    </head>
-    <body>
-        <canvas id="board"></canvas> 
-        <button id="resetButton">Restart</button>
-        <script src="flappybird.js"></script>   
-    </body>
-</html>
+</head>
+<body>
+
+    <!-- Skin Selection Screen -->
+    <div id="skinSelection">
+        <h3>Select a skin</h3>
+        <div class="skin-option" onclick="selectSkin('flappybird.png')">
+            <img src="flappybird.png" alt="Skin 1">
+        </div>
+        <div class="skin-option" onclick="selectSkin('bird2.png')">
+            <img src="bird2.png" alt="Skin 2">
+        </div>
+        <div class="skin-option" onclick="selectSkin('bird3.png')">
+            <img src="bird3.png" alt="Skin 3">
+        </div>
+     <div class="skin-option" onclick="selectSkin('bird4.png')">
+            <img src="bird4.png" alt="Skin 3">
+        </div>
+        <div class="skin-option" onclick="selectSkin('bird5.png')">
+            <img src="bird5.png" alt="Skin 3">
+        </div>
+        <div class="skin-option" onclick="selectSkin('bird6.png')">
+            <img src="bird6.png" alt="Skin 3">
+        </div>
+        </div>
+    <!-- Game Canvas -->
+    <canvas id="board"></canvas> 
+<button id="resetButton" style="display: none;" onclick="resetGame()">Restart</button>
+
+    <script src="flappybird.js"></script>   
+
+</body>
+            </html>
